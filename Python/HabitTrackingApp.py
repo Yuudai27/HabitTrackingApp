@@ -42,7 +42,7 @@ def insertDatabase(habitData):
     habitArray.clear()
     loadDatabase()
     
-parser_insertDatabase = subparsers.add_parser('insertDatabase', help='Completes habit with given ID!')
+parser_insertDatabase = subparsers.add_parser('insertDatabase', help='Creates new habit with given details!')
 parser_insertDatabase.add_argument('-name', help='Name of habit is to provide!')
 parser_insertDatabase.add_argument('-desc', help='Description of habit is to provide!')
 parser_insertDatabase.add_argument('-per', help='Periodicity of habit is to provide!')
@@ -88,7 +88,7 @@ def updateDatabase(habitData):
                     periodicityValue = Periodicity.WEEKLY.value
                 x.setDatabaseValues(habit_ID, habit_name, habit_description, periodicityValue, last_finishing, last_streak, best_streak, habit_active)
                 
-parser_updateDatabase = subparsers.add_parser('updateDatabase', help='Completes habit with given ID!')
+parser_updateDatabase = subparsers.add_parser('updateDatabase', help='Updates habits with given details.')
 parser_updateDatabase.add_argument('-id', help='ID of habit is to provide!')
 parser_updateDatabase.add_argument('-name', help='Name of habit is to provide!')
 parser_updateDatabase.add_argument('-desc', help='Description of habit is to provide!')
