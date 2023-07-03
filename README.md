@@ -19,8 +19,9 @@
 
 This command provides help for the available subcommands in the program.
 The subcommand line have to be written instead the -h.
-> python HabitTrackingApp.py -h
-
+````python
+ python HabitTrackingApp.py -h
+```
 With this subcommand and the arguments -name, -desc, -per a new habit can be implemented with
 set name, description and periodicity.
 > insertDatabase -name value1(name) -desc value2(description) -per value3(DAILY/WEEKLY)
