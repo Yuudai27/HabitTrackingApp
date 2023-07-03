@@ -1,6 +1,6 @@
 # HabitTrackingApp
 
-##Installing Python
+##Installing Python</br>
 1.) Download the Python Anaconda installer </br>
 2.) Install Python Anaconda </br>
 3.) Start the Anaconda Prompt </br>
