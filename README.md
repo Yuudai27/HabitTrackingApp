@@ -4,13 +4,24 @@
 2.) Install Python Anaconda
 3.) Start the Anaconda Prompt
 4.) install the mysql-connector-python with the following command:
+```python
     pip install mysql-connector-python
+```
 5.) Unpack the sql files into your root- folder of the MySQL server 
-6.) Open the terminal and enter the following command: “mysql -u root -p < habittrackingapp.sql” 
+6.) Open the terminal and enter the following command:
+```python
+mysql -u root -p < habittrackingapp.sql
+``` 
 7.) The root password will be requested. After entering the command will be executed 
-8.) Enter the following command: “mysql -u root -p < habits.sql” 
+8.) Enter the following command:
+```python
+mysql -u root -p < habits.sql
+```
 9.) The root password will be requested. After entering the command will be executed 
-10.) Enter the following command: “mysql -u root -p < habitcalendar.sql” 
+10.) Enter the following command:
+```python
+mysql -u root -p < habitcalendar.sql
+``` 
 11.) The root password will be requested. After entering the command will be executed 
 12.) The database is fully installed
 13.) Unpack the py files into the folder you want to run it from
