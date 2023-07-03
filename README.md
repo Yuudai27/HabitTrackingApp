@@ -20,35 +20,55 @@
 This command provides help for the available subcommands in the program.
 The subcommand line have to be written instead the -h.
 ```python
- python HabitTrackingApp.py -h
+python HabitTrackingApp.py -h
 ```
 With this subcommand and the arguments -name, -desc, -per a new habit can be implemented with
 set name, description and periodicity.
-> insertDatabase -name value1(name) -desc value2(description) -per value3(DAILY/WEEKLY)
+```python
+insertDatabase -name value1(name) -desc value2(description) -per value3(DAILY/WEEKLY)
+```
 
 The subcommand allows to update a habit with the arguments for name, description, periodicity and habit active state.
-> updateDatabase -id value1(id) -name value2(name) -desc value3(description) -per value4(DAILY/WEEKLY) -active value5(active boolean)
+```python
+updateDatabase -id value1(id) -name value2(name) -desc value3(description) -per value4(DAILY/WEEKLY) -active value5(active boolean)
+```
 
 The deleteDatabase subcommand allows to delete a given habit.
-> deleteDatabase -id value1(id)
+```python
+deleteDatabase -id value1(id)
+```
 
 The searchIDBestStreak subcommand allows to search the best streak of a given habit.
-> searchIDBestStreak -id value1(id)
+```python
+searchIDBestStreak -id value1(id)
+```
 
 The complete Task subcommand completes the task for a given habit.
-> completeTask -id value1(id)
+```python
+completeTask -id value1(id)
+```
 
 The searchActiviteHabits subcommand allows to search for all active habits.
-> searchActiveHabits -active value1(boolean)
+```python
+searchActiveHabits -active value1(boolean)
+```
 
 The searchOverallBestStreak subcommand searches the habit with the streak of all habits.
-> searchOverallBestStreak -active value1(boolean)
+```python
+searchOverallBestStreak -active value1(boolean)
+```
 
 The searchSamePeriodicties subcommand allows to search for all habits with a given periodicity.
-> searchSamePeriodicities -per value1(DAILY/WEEKLY)
+```python
+searchSamePeriodicities -per value1(DAILY/WEEKLY)
+```
 
 The showHabit subcommand gives details for habits of the given id.
-> showHabit -id value1(id)
+```python
+showHabit -id value1(id)
+```
 
 The pytest program runs as an own command and tests the HabitTrackingApp.py. The test arguments are predefined.
-> pytest test_HabitTrackingApp.py
+```python
+pytest test_HabitTrackingApp.py
+```
