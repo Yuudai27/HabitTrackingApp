@@ -1,6 +1,8 @@
 # HabitTrackingApp
 
-##Installing Python</br>
+In this README it will be explained how to install all the necessary components</br>
+for the Python application.
+##Installing Python
 1.) Download the Python Anaconda installer </br>
 2.) Install Python Anaconda </br>
 3.) Start the Anaconda Prompt </br>
