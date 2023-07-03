@@ -5,7 +5,7 @@
 3.) Start the Anaconda Prompt
 4.) install the mysql-connector-python with the following command:
 ```python
-    pip install mysql-connector-python
+pip install mysql-connector-python
 ```
 5.) Unpack the sql files into your root- folder of the MySQL server 
 6.) Open the terminal and enter the following command:
@@ -29,54 +29,53 @@ mysql -u root -p < habitcalendar.sql
 15.) Now you can use the program with the following commands:
 
 This command provides help for the available subcommands in the program.
-The subcommand line have to be written instead the -h.
 ```python
 python HabitTrackingApp.py -h
 ```
 With this subcommand and the arguments -name, -desc, -per a new habit can be implemented with
 set name, description and periodicity.
 ```python
-insertDatabase -name value1(name) -desc value2(description) -per value3(DAILY/WEEKLY)
+python HabitTrackingApp.py insertDatabase -name TestHabit -desc Testing -per WEEKLY
 ```
 
 The subcommand allows to update a habit with the arguments for name, description, periodicity and habit active state.
 ```python
-updateDatabase -id value1(id) -name value2(name) -desc value3(description) -per value4(DAILY/WEEKLY) -active value5(active boolean)
+python HabitTrackingApp.py updateDatabase -id 1 -name ChangedHabit -desc Changed -per DAILY -active True
 ```
 
 The deleteDatabase subcommand allows to delete a given habit.
 ```python
-deleteDatabase -id value1(id)
+python HabitTrackingApp.py deleteDatabase -id 2
 ```
 
 The searchIDBestStreak subcommand allows to search the best streak of a given habit.
 ```python
-searchIDBestStreak -id value1(id)
+python HabitTrackingApp.py searchIDBestStreak 1
 ```
 
 The complete Task subcommand completes the task for a given habit.
 ```python
-completeTask -id value1(id)
+python HabitTrackingApp.py completeTask -id 4
 ```
 
 The searchActiviteHabits subcommand allows to search for all active habits.
 ```python
-searchActiveHabits -active value1(boolean)
+python HabitTrackingApp.py searchActiveHabits -active True
 ```
 
 The searchOverallBestStreak subcommand searches the habit with the streak of all habits.
 ```python
-searchOverallBestStreak -active value1(boolean)
+python HabitTrackingApp.py searchOverallBestStreak -active True
 ```
 
 The searchSamePeriodicties subcommand allows to search for all habits with a given periodicity.
 ```python
-searchSamePeriodicities -per value1(DAILY/WEEKLY)
+python HabitTrackingApp.py searchSamePeriodicities -per DAILY
 ```
 
 The showHabit subcommand gives details for habits of the given id.
 ```python
-showHabit -id value1(id)
+python HabitTrackingApp.py showHabit -id 4
 ```
 
 The pytest program runs as an own command and tests the HabitTrackingApp.py. The test arguments are predefined.
