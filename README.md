@@ -128,7 +128,6 @@ search for the best streak
 python HabitTrackingApp.py searchOverallBestStreak -active True
 ```
 or let's search for all habits with the periodicity DAILY.
-The searchSamePeriodicties subcommand allows to search for all habits with a given periodicity.
 ```python
 python HabitTrackingApp.py searchSamePeriodicities -per DAILY
 ```
