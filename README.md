@@ -1,6 +1,5 @@
 # HabitTrackingApp
-In this README it will be explained how to install all the necessary components</br>
-for the Python application. </br>
+
 ## Structure of the application
 The application consists once of the Python program, with a separate Habit- and Periodicty-</br>
 module and implements the argparse- and the mySQL-Connector-Python- module to be able</br>
