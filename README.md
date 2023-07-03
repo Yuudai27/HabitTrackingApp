@@ -1,7 +1,18 @@
 # HabitTrackingApp
-
 In this README it will be explained how to install all the necessary components</br>
 for the Python application. </br>
+## Structure of the application
+The application consists once of the Python program, with a separate Habit- and Periodicty-</br>
+module and implements the argparse- and the mySQL-Connector-Python- module to be able</br>
+to use a Command-Line-Interface and to have an interface to exchange information with</br>
+the mySQL- database. The application holds the data of the habits in instances of the</br>
+Habit- class, which gets updated with every change in the mySQL- database. </br>
+The other part of the application is the mySQL- database, which has the habits- and the</br>
+habitCalendar- table. The habits- table holds all information for the habits in the</br>
+application (habit_ID, habit_name, habit_description, creation_date, periodicity,</br> 
+last_finishing, last_streak, best_streak and habit_active) and the habitCalendar holds</br>
+the information, when a habit got completed(calendar_ID, habit_ID and completion_date).
+
 ## Installing Python
 1.) Download the Python Anaconda installer </br>
 2.) Install Python Anaconda </br>
@@ -10,7 +21,7 @@ for the Python application. </br>
 ```python
 pip install mysql-connector-python
 ``` 
-## Installing mySQL
+## Installing mySQL-database
 5.) install a mySQL- server on your system, if there is no existing </br>
 6.) Unpack the sql files into your root- folder of the MySQL server </br>
 7.) Open the terminal and enter the following command:
