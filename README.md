@@ -2,7 +2,7 @@
 
 In this README it will be explained how to install all the necessary components</br>
 for the Python application. </br>
-##Installing Python
+## Installing Python
 1.) Download the Python Anaconda installer </br>
 2.) Install Python Anaconda </br>
 3.) Start the Anaconda Prompt </br>
@@ -10,7 +10,7 @@ for the Python application. </br>
 ```python
 pip install mysql-connector-python
 ``` 
-##Installing mySQL
+## Installing mySQL
 5.) install a mySQL- server on your system, if there is no existing </br>
 6.) Unpack the sql files into your root- folder of the MySQL server </br>
 7.) Open the terminal and enter the following command:
