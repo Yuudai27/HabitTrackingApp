@@ -19,7 +19,7 @@
 
 This command provides help for the available subcommands in the program.
 The subcommand line have to be written instead the -h.
-````python
+```python
  python HabitTrackingApp.py -h
 ```
 With this subcommand and the arguments -name, -desc, -per a new habit can be implemented with
