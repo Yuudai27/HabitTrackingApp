@@ -1,7 +1,7 @@
 # HabitTrackingApp
 
 In this README it will be explained how to install all the necessary components</br>
-for the Python application.
+for the Python application. </br>
 ##Installing Python
 1.) Download the Python Anaconda installer </br>
 2.) Install Python Anaconda </br>
@@ -9,7 +9,7 @@ for the Python application.
 4.) install the mysql-connector-python with the following command:
 ```python
 pip install mysql-connector-python
-``` </br>
+``` 
 ##Installing mySQL
 5.) install a mySQL- server on your system, if there is no existing </br>
 6.) Unpack the sql files into your root- folder of the MySQL server </br>
