@@ -84,8 +84,59 @@ The showHabit subcommand gives details for habits of the given id.
 ```python
 python HabitTrackingApp.py showHabit -id 4
 ```
+## Testing the application 
+If you want to test the application you can use the subcommands in the following order: </br>
+First show all active habits.
+```python
+python HabitTrackingApp.py searchActiveHabits -active True
+```
+Then create a new habit similar like this.
+```python
+python HabitTrackingApp.py insertDatabase -name TestHabit -desc Testing -per WEEKLY
+```
+Try again to show all habits and the new habit should be included in the output.
+```python
+python HabitTrackingApp.py searchActiveHabits -active True
+```
+You can try to update the new habit, you've just created. Take the given ID in the output.
+```python
+python HabitTrackingApp.py updateDatabase -id 6 -name ChangedHabit -desc Changed -per DAILY -active True
+```
+With the following line you can directly show your habit with using the same ID again.
+```python
+python HabitTrackingApp.py showHabit -id 6
+```
+Let's complete your new habit for the first time for the given ID.
+```python
+python HabitTrackingApp.py completeTask -id 6
+```
+Try to get the best streak of your new habit with the ID.
+```python
+python HabitTrackingApp.py searchIDBestStreak 6
+```
+Finally, let's delete the new habit with the ID from before.
+```python
+python HabitTrackingApp.py deleteDatabase -id 6
+```
+Try to check for all active habits again and your habit should be gone.
+```python
+python HabitTrackingApp.py searchActiveHabits -active True
+```
+At the end let's analyze the habits in the system and </br>
+search for the best streak
+```python
+python HabitTrackingApp.py searchOverallBestStreak -active True
+```
+or let's search for all habits with the periodicity DAILY.
+The searchSamePeriodicties subcommand allows to search for all habits with a given periodicity.
+```python
+python HabitTrackingApp.py searchSamePeriodicities -per DAILY
+```
+
 ## Pytest program to test the application
 The pytest program runs as an own command and tests the HabitTrackingApp.py. The test arguments are predefined.
 ```python
 pytest test_HabitTrackingApp.py
 ```
+
+
