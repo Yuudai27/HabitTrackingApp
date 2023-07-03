@@ -1,31 +1,31 @@
 # HabitTrackingApp
 
-1.) Download the Python Anaconda installer
-2.) Install Python Anaconda
-3.) Start the Anaconda Prompt
+1.) Download the Python Anaconda installer </br>
+2.) Install Python Anaconda </br>
+3.) Start the Anaconda Prompt </br>
 4.) install the mysql-connector-python with the following command:
 ```python
 pip install mysql-connector-python
 ```
-5.) Unpack the sql files into your root- folder of the MySQL server 
+5.) Unpack the sql files into your root- folder of the MySQL server </br>
 6.) Open the terminal and enter the following command:
 ```python
 mysql -u root -p < habittrackingapp.sql
 ``` 
-7.) The root password will be requested. After entering the command will be executed 
+7.) The root password will be requested. After entering the command will be executed </br>
 8.) Enter the following command:
 ```python
 mysql -u root -p < habits.sql
 ```
-9.) The root password will be requested. After entering the command will be executed 
+9.) The root password will be requested. After entering the command will be executed </br>
 10.) Enter the following command:
 ```python
 mysql -u root -p < habitcalendar.sql
 ``` 
-11.) The root password will be requested. After entering the command will be executed 
-12.) The database is fully installed
-13.) Unpack the py files into the folder you want to run it from
-14.) Start the anaconda prompt 
+11.) The root password will be requested. After entering the command will be executed </br>
+12.) The database is fully installed </br>
+13.) Unpack the py files into the folder you want to run it from </br>
+14.) Start the anaconda prompt </br>
 15.) Now you can use the program with the following commands:
 
 This command provides help for the available subcommands in the program.
