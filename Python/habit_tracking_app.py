@@ -11,7 +11,7 @@ habit_array = []
 #************************************************************************************************** 
 '''The mysql.connector module gets implemented to create an interface between python and 
 the mysql- database. The connection will be assigned with the login data to the sql-server'''
-cnx = mysql.connector.connect(user='root', password='r00t1988',
+cnx = mysql.connector.connect(user='****', password='*******',
                              host='localhost', database='habittrackingapp')
 cursor = cnx.cursor(buffered=True)
 
