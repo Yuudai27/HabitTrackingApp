@@ -46,106 +46,106 @@ mysql -u root -p < habitcalendar.sql
 
 This command provides help for the available subcommands in the program.
 ```python
-python HabitTrackingApp.py -h
+python habit_tracking_app.py -h
 ```
 ## Subcommands for the application
 With this subcommand and the arguments -name, -desc, -per a new habit can be implemented with
 set name, description and periodicity.
 ```python
-python HabitTrackingApp.py insertDatabase -name TestHabit -desc Testing -per WEEKLY
+python habit_tracking_app.py insert_database -name TestHabit -desc Testing -per WEEKLY
 ```
 
 The subcommand allows to update a habit with the arguments for name, description, periodicity and habit active state.
 ```python
-python HabitTrackingApp.py updateDatabase -id 1 -name ChangedHabit -desc Changed -per DAILY -active True
+python habit_tracking_app.py update_database -id 1 -name ChangedHabit -desc Changed -per DAILY -active True
 ```
 
-The deleteDatabase subcommand allows to delete a given habit.
+The delete_database subcommand allows to delete a given habit.
 ```python
-python HabitTrackingApp.py deleteDatabase -id 2
+python habit_tracking_app.py delete_database -id 2
 ```
 
-The searchIDBestStreak subcommand allows to search the best streak of a given habit.
+The search_id_best_streak subcommand allows to search the best streak of a given habit.
 ```python
-python HabitTrackingApp.py searchIDBestStreak 1
+python habit_tracking_app.py search_id_best_streak 1
 ```
 
-The complete Task subcommand completes the task for a given habit.
+The complete_task subcommand completes the task for a given habit.
 ```python
-python HabitTrackingApp.py completeTask -id 4
+python habit_tracking_app.py complete_task -id 4
 ```
 
-The searchActiviteHabits subcommand allows to search for all active habits.
+The search_activite_habits subcommand allows to search for all active habits.
 ```python
-python HabitTrackingApp.py searchActiveHabits -active True
+python habit_tracking_app.py search_activite_habits -active True
 ```
 
-The searchOverallBestStreak subcommand searches the habit with the streak of all habits.
+The search_overall_best_streak subcommand searches the habit with the streak of all habits.
 ```python
-python HabitTrackingApp.py searchOverallBestStreak -active True
+python habit_tracking_app.py search_overall_best_streak -active True
 ```
 
-The searchSamePeriodicties subcommand allows to search for all habits with a given periodicity.
+The search_same_periodicities subcommand allows to search for all habits with a given periodicity.
 ```python
-python HabitTrackingApp.py searchSamePeriodicities -per DAILY
+python habit_tracking_app.py search_same_periodicities -per DAILY
 ```
 
-The showHabit subcommand gives details for habits of the given id.
+The show_habit subcommand gives details for habits of the given id.
 ```python
-python HabitTrackingApp.py showHabit -id 4
+python habit_tracking_app.py show_habit -id 4
 ```
 ## Testing the application 
 If you want to test the application you can use the subcommands in the following order: </br>
 First show all active habits.
 ```python
-python HabitTrackingApp.py searchActiveHabits -active True
+python habit_tracking_app.py search_activite_habits -active True
 ```
 Then create a new habit similar like this.
 ```python
-python HabitTrackingApp.py insertDatabase -name TestHabit -desc Testing -per WEEKLY
+python habit_tracking_app.py insert_database -name TestHabit -desc Testing -per WEEKLY
 ```
 Try again to show all habits and the new habit should be included in the output.
 ```python
-python HabitTrackingApp.py searchActiveHabits -active True
+python habit_tracking_app.py search_activite_habits -active True
 ```
 You can try to update the new habit, you've just created. Take the given ID in the output.
 ```python
-python HabitTrackingApp.py updateDatabase -id 6 -name ChangedHabit -desc Changed -per DAILY -active True
+python habit_tracking_app.py update_database -id 6 -name ChangedHabit -desc Changed -per DAILY -active True
 ```
 With the following line you can directly show your habit with using the same ID again.
 ```python
-python HabitTrackingApp.py showHabit -id 6
+python habit_tracking_app.py show_habit -id 6
 ```
 Let's complete your new habit for the first time for the given ID.
 ```python
-python HabitTrackingApp.py completeTask -id 6
+python habit_tracking_app.py complete_task -id 6
 ```
 Try to get the best streak of your new habit with the ID.
 ```python
-python HabitTrackingApp.py searchIDBestStreak 6
+python habit_tracking_app.py search_id_best_streak 6
 ```
 Finally, let's delete the new habit with the ID from before.
 ```python
-python HabitTrackingApp.py deleteDatabase -id 6
+python habit_tracking_app.py delete_database -id 6
 ```
 Try to check for all active habits again and your habit should be gone.
 ```python
-python HabitTrackingApp.py searchActiveHabits -active True
+python habit_tracking_app.py search_activite_habits -active True
 ```
 At the end let's analyze the habits in the system and </br>
 search for the best streak
 ```python
-python HabitTrackingApp.py searchOverallBestStreak -active True
+python habit_tracking_app.py search_overall_best_streak -active True
 ```
 or let's search for all habits with the periodicity DAILY.
 ```python
-python HabitTrackingApp.py searchSamePeriodicities -per DAILY
+python habit_tracking_app.py search_same_periodicities -per DAILY
 ```
 
 ## Pytest program to test the application
 The pytest program runs as an own command and tests the HabitTrackingApp.py. The test arguments are predefined.
 ```python
-pytest test_HabitTrackingApp.py
+pytest test_habit_tracking_app.py
 ```
 
 
