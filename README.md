@@ -41,8 +41,13 @@ mysql -u root -p < habitcalendar.sql
 13.) The database is fully installed </br></br>
 ## Get the Python application ready
 14.) Unpack the py files into the folder you want to run it from </br>
-15.) Start the anaconda prompt </br>
-16.) Now you can use the program with the following commands:
+15.) Open the habit_tracking_app.py with an editor and insert your user and password data </br>
+for the mySQL- database at line 14
+```python
+cnx = mysql.connector.connect(user='****', password='*******',
+```
+16.) Start the anaconda prompt </br>
+17.) Now you can use the program with the following commands:
 
 This command provides help for the available subcommands in the program.
 ```python
